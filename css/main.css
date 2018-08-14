@@ -166,6 +166,7 @@ main {
 
 .bio-image {
   grid-area: bioimage;
+  width: 100%;
   margin: auto;
   border: #9c0a0a 3px solid; }
 
