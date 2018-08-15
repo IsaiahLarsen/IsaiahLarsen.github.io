@@ -30,8 +30,6 @@ h3 {
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
   }
-  &.comingSoon {
-  }
 }
 
 a {
@@ -81,6 +79,19 @@ main {
     "bioimage bio bio"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
+
+  a {
+    @include easeOut;
+    &:hover {
+      color: set-text-color($primary-color);
+      background: darken($secondary-color, 10);
+      padding: 0.2rem 0.5rem;
+      display: inline-block;
+      border-radius: 0.5rem;
+
+      border: 3px #fff solid;
+    }
+  }
 }
 
 .bio-image {
@@ -148,7 +159,6 @@ main {
       padding: 0.5rem 1.5rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
-      cursor: pointer;
 
       span {
         color: set-text-color($secondary-color);
@@ -187,6 +197,11 @@ main {
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+}
+.comingSoon {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 25px;
 }
 
 @import "mobile";
