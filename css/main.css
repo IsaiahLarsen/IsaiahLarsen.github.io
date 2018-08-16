@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/background.jpg);
+      background: url(/img/bioSmall.jpg);
       background-size: cover;
       border-radius: 30%;
       border: solid 3px #127892; }
@@ -153,7 +153,7 @@ header {
   color: #127892; }
 
 main {
-  padding: 2.5rem;
+  padding: 3.5rem;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
