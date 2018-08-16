@@ -52,15 +52,23 @@
     }
   }
 
+  .about-cards {
+    grid-template-areas:
+      "job1"
+      "job2";
+    grid-template-columns: 1fr;
+  }
+
   .about-info {
     grid-template-areas:
       "bioimage"
-      "bio"
-      "job1"
-      "job2"
-      "job3";
+      "bio";
 
     grid-template-columns: 1fr;
+  }
+  .bio-image {
+    width: 70%;
+    margin: auto;
   }
   .projects {
     grid-template-columns: repeat(2, 1fr);
