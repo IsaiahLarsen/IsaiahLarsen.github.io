@@ -26,10 +26,11 @@ $background-opacity: 0.8;
         background: rgba($primary-color, $background-opacity);
       }
     }
-    &#bg-work-image {
+    &#bg-work {
       background: url(/img/work.jpg);
-      background-attachment: fixed;
       background-size: cover;
+      background-attachment: fixed;
+      position: relative;
       width: 100%;
       &:after {
         content: "";
