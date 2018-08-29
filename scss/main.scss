@@ -74,7 +74,7 @@ main {
   &#home {
     overflow: hidden;
     h1 {
-      margin-top: 10vh;
+      margin-top: 5vh;
     }
   }
 }
@@ -129,11 +129,10 @@ main {
 //work projects
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.7rem;
 
   img {
     width: 100%;
+    margin: auto;
     border: 3px #fff solid;
 
     &:hover {
@@ -142,6 +141,14 @@ main {
       @include easeOut;
     }
   }
+}
+
+.project-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-gap: 20px;
+  align-items: center;
 }
 
 //contact page
@@ -177,8 +184,10 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+  text-align: center;
   &:hover {
-    background: $secondary-color;
+    @include easeOut;
+    background: lighten($primary-color, 50);
     color: set-text-color($secondary-color);
   }
 }
@@ -191,8 +200,8 @@ main {
 
 .btn-light {
   @extend .btn;
-  background: lighten($primary-color, 50);
-  color: #333;
+  background: $secondary-color;
+  color: #000;
 }
 
 #main-footer {
@@ -205,12 +214,6 @@ main {
   content: "";
   background: #fff;
   opacity: 0;
-}
-
-.comingSoon {
-  text-align: center;
-  margin-top: 3rem;
-  font-size: 25px;
 }
 
 @import "mobile";
