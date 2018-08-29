@@ -33,6 +33,21 @@
       }
     }
   }
+  &:hover {
+    .btn-line {
+      &:nth-child(1) {
+        background: $secondary-color;
+      }
+
+      &:nth-child(2) {
+        background: $secondary-color;
+      }
+
+      &:nth-child(3) {
+        background: $secondary-color;
+      }
+    }
+  }
 }
 
 //menu overlay
